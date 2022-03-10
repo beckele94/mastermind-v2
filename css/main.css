@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: chartreuse;
+    background-color: black;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+header{
+    
+    /* position: fixed; */
+    padding: 20px;
+    list-style: none;
+    background-color: darkmagenta;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: darkmagenta;
+}
+
+li{
+    background-color: darkmagenta;
+    font-size: 15px;
+}
+
+a{
+    background-color: darkmagenta;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 25px;
+    background-color: darkmagenta;
+}
+
+h3{
+    text-align: center;
+    padding: 40px;
+}
+
+p{
+    padding: 10px;
+}
+
+.form{
+    margin-top: 50px;
+    text-align: center;
+}
+
+input{
+    margin: 10px;
+    width: 40px;
+    height: 30px;
+    border: solid 2px darkmagenta;
+    border-radius: 20%;
+}
+
+.refreshButton{
+    width: 150px;
+}
+
+input:hover{
+    border: solid 4px darkmagenta;
+}
+
+#indications{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+#resultat{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.messageAnime{
+    animation: slidein 3s;
+}
+
+@keyframes slidein{
+    from{
+        margin-left: 70%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}

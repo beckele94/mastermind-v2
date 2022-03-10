@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>MasterMind v2</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1><a href="index.html">MasterMind v2</a></h1>
+            <li>Scores</li>
+            <li><a href="regles.html">Règles</a></li>
+            <li><a href="credits.html">Crédits</a></li>
+        </nav>
+    </header>
+
+    <section>
+        <div class="form">
+            <input type="number" name="answer1" value=0 class="answer1" />
+            <input type="number" name="answer2" value=0 class="answer2" />
+            <input type="number" name="answer3" value=0 class="answer3" />
+            <input type="number" name="answer4" value=0 class="answer4" />
+            <input type="submit" name="send" value="OK" onclick={valid()} />
+            <input type="submit" name="refresh" class="refreshButton" value="Reessayer" onclick="history.go(0)" />
+        </div>
+
+        <div id="indications"></div>
+        <div id="resultat"></div>
+
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
